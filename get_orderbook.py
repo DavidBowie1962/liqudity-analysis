@@ -20,7 +20,6 @@ def hey():
             print(fast_price_sell, fast_price_buy)
             print(best_price_sell, best_price_buy)
             #
-            # # только для удобной отладки, в проде - лишнее
             bids = [cast_money(p.price) for p in book.bids] # покупатели
             asks = [cast_money(p.price) for p in book.asks] # продавцы
             print(bids, asks, sep="\n")
